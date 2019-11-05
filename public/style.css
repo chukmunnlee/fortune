@@ -9,6 +9,11 @@ body {
 	align-items: center;
 }
 
+.stack-it {
+	display: flex;
+	flex-direction: column;
+}
+
 .fortune-text {
 	width: 75vw;
 	font-size: 5em;

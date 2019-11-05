@@ -32,7 +32,7 @@ app.get(['/', '/index.html'], (req, resp) => {
 		'text/html': () => {
 			resp.type('text/html')
 			resp.render('fortune', 
-				{ text: getFortune(), image: getNumber(), layout: false }
+				{ text: getFortune(), image: getNumber(), port: PORT, layout: false }
 			)
 		},
 		'application/json': () => {
