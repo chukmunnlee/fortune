@@ -1,0 +1,27 @@
+body {
+	width: 100vw;
+	height: 100vh;
+}
+.center-it {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.fortune-text {
+	width: 75vw;
+	font-size: 5em;
+	font-weight: bold;
+	padding-bottom: 5vh;
+	border-bottom: 5px solid red;
+}
+
+.number-image {
+	border-radius: 8px;
+	padding: .5vw;
+	width: 15vw;
+	height: auto;
+	margin-right: 2vw;
+	border: grey 2px solid;
+}
