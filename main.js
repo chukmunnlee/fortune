@@ -45,6 +45,10 @@ app.get(['/', '/index.html'], (req, resp) => {
 	})
 })
 
+app.get('/healthz', (req, resp) => {
+	resp.status(200).json({ timestamp: (new Date()).getTime() })
+})
+
 app.get('/health', (req, resp) => {
 	resp.status(200)
 	resp.type('text/plain')
