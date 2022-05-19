@@ -16,6 +16,8 @@ ADD views views
 
 FROM gcr.io/distroless/nodejs:${VERSION}
 
+LABEL org.opencontainers.image.source https://github.com/chukmunnlee/fortune
+
 COPY --from=builder /app /app
 
 WORKDIR /app
